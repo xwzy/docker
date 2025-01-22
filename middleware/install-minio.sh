@@ -28,11 +28,11 @@ docker run -d \
     -e "MINIO_ROOT_USER=$MINIO_ROOT_USER" \
     -e "MINIO_ROOT_PASSWORD=$MINIO_ROOT_PASSWORD" \
     -v /data/minio:/data \
-    minio/minio server --console-address ":9001" /data
+    minio/minio:RELEASE.2025-01-20T14-49-07Z server --console-address ":9001" /data
 
 echo "MinIO has been installed and configured:"
 echo "- API Port: 9000"
 echo "- Console Port: 9001"
 echo "- Username: $MINIO_ROOT_USER"
 echo "- Password: $MINIO_ROOT_PASSWORD"
-echo "- Data directory: /data/minio" 
+echo "- Data directory: /data/minio"

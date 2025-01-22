@@ -87,7 +87,7 @@ docker run -d \
     -v /data/nginx/conf.d:/etc/nginx/conf.d:ro \
     -v /data/nginx/logs:/var/log/nginx \
     -v /data/nginx/html:/usr/share/nginx/html \
-    nginx:stable
+    nginx:1.27.3
 
 echo "Nginx has been installed and configured:"
 echo "- HTTP Port: 80"
