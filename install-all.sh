@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt update && sudo apt upgrade -y
+
 # Execute all shell scripts in pre directory
 if [ -d "pre" ]; then
     for script in pre/*.sh; do
